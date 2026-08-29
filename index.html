@@ -63,16 +63,12 @@ footer{border-top:1px solid var(--border);padding-top:17px;margin-top:12px;displ
 .footer-sources{text-align:right}
 .footer-sources a{color:var(--muted);text-decoration:none}
 .footer-sources a:hover{color:var(--text)}
-.back-nav{padding:12px 0 0}
-.back-link{font-size:.75rem;color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:5px;transition:color .15s ease}
-.back-link:hover{color:var(--green)}
 @media(max-width:760px){.snapshot{grid-template-columns:repeat(2,1fr)}.container{padding:22px 15px 38px}}
 @media(max-width:520px){.snapshot{grid-template-columns:1fr 1fr}.topline{align-items:flex-start}.header-title{font-size:2rem}.card-destaque{padding:16px}footer{flex-direction:column}.footer-sources{text-align:left}}
 </style>
 </head>
 <body>
 <div class="container">
-<nav class="back-nav"><a href="https://geocnpj.api.br/" class="back-link" onclick="window.top.location.href='https://geocnpj.api.br/';return false;">← GeoCNPJ</a></nav>
 <header>
   <div class="topline">
     <div class="brand">RADAR TI & IA</div>
@@ -80,18 +76,18 @@ footer{border-top:1px solid var(--border);padding-top:17px;margin-top:12px;displ
   </div>
   <div class="header-date" id="dataHeader"></div>
   <h1 class="header-title">O que realmente importa em <span class="accent">TI & IA</span>.</h1>
-  <p class="header-summary">Modelos menores e mais eficientes dominam a agenda do dia: Google lança Gemini Flash 2.0 Omni, Meta revela acelerador de hardware próprio para IA generativa, Cloudflare expande proteção contra agentes de IA maliciosos e a comunidade debate se VMs são suficientes para conter agentes cibernéticos avançados.</p>
+  <p class="header-summary">OpenAI no centro das atenções: da polêmica com Cursor e SpaceX aos primeiros sinais do GPT-6 "Astra", o dia foi marcado por movimentos estratégicos em modelos de IA, segurança de agentes e a crescente corrida por infraestrutura e chips de nova geração.</p>
 </header>
 <div class="snapshot">
-  <div class="metric"><div class="metric-label">Notícias</div><div class="metric-value">18</div></div>
-  <div class="metric"><div class="metric-label">Destaques</div><div class="metric-value green">6</div></div>
-  <div class="metric"><div class="metric-label">Sinal do dia</div><div class="metric-value orange">Eficiência</div></div>
+  <div class="metric"><div class="metric-label">Notícias</div><div class="metric-value">14</div></div>
+  <div class="metric"><div class="metric-label">Destaques</div><div class="metric-value green">5</div></div>
+  <div class="metric"><div class="metric-label">Sinal do dia</div><div class="metric-value orange">Disrupção</div></div>
   <div class="metric"><div class="metric-label">Foco</div><div class="metric-value blue">TI + IA</div></div>
 </div>
 <div class="trend">
   <div class="trend-kicker">Tendência do dia</div>
-  <h2>Small Models & Edge AI: a corrida por modelos menores, mais rápidos e mais baratos ganhou força total</h2>
-  <p>O lançamento do Gemini Flash 2.0 Omni pelo Google, a discussão crescente sobre "Small Language Models" no TLDR e a apresentação de um SLM otimizado para tool calling no Hacker News apontam para um consenso claro no mercado: o futuro de curto prazo da IA não é apenas sobre modelos maiores, mas sobre modelos mais eficientes que rodam mais perto do usuário final, com menor custo de inferência e maior velocidade de resposta.</p>
+  <h2>OpenAI redefine parcerias e fronteiras: do GPT-6 ao bloqueio de ferramentas de coding</h2>
+  <p>A OpenAI concentrou os holofotes do dia em duas frentes opostas: o encerramento do acesso do Cursor após a aquisição pela SpaceX acende o debate sobre controle de acesso a modelos de IA em contextos corporativos, enquanto os primeiros outputs do GPT-6 "Astra" mostram que a corrida por modelos mais capazes está longe de desacelerar. Paralelamente, a TLDR Tech destaca avanços em modelos pequenos, segurança de agentes em VMs e chips dedicados à IA generativa — sinalizando que infraestrutura e governança de IA serão os grandes temas do segundo semestre de 2026.</p>
 </div>
 <section>
   <div class="section-head">
@@ -100,45 +96,38 @@ footer{border-top:1px solid var(--border);padding-top:17px;margin-top:12px;displ
   </div>
   <div class="destaques-grid">
 
-    <a class="card-destaque" href="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Omni_1-1_Flash_hero.width-1300.png" target="_blank" rel="noopener">
-      <span class="fonte-tag">TLDR Tech</span>
-      <h3>Google lança Gemini Flash 2.0 Omni com capacidades multimodais ampliadas</h3>
-      <p>O Google apresentou o Gemini Flash 2.0 Omni, novo modelo multimodal da família Flash focado em velocidade e custo reduzido. O modelo combina compreensão de texto, imagem e áudio em uma única arquitetura, posicionando-se como alternativa leve para aplicações que exigem respostas rápidas e processamento multimodal eficiente em escala.</p>
+    <a class="card-destaque" href="https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html" target="_blank" rel="noopener">
+      <span class="fonte-tag">Hacker News · CNBC</span>
+      <h3>OpenAI encerra acesso do Cursor após aquisição pela SpaceX</h3>
+      <p>A OpenAI revogou o acesso do Cursor — um dos editores de código com IA mais populares entre desenvolvedores — após a ferramenta ser adquirida pela SpaceX. O caso levanta questões críticas sobre como a OpenAI controla o acesso às suas APIs em contextos de mudança de controle corporativo, e pode impactar diretamente equipes de desenvolvimento que dependem de ferramentas de AI coding baseadas nos modelos da empresa.</p>
       <span class="impact high"><i></i> impacto alto</span>
     </a>
 
-    <a class="card-destaque" href="https://www.servethehome.com/wp-content/uploads/2026/08/meta-3d-dram-based-accelerator-for-genai-slide-17.jpg" target="_blank" rel="noopener">
-      <span class="fonte-tag">TLDR Tech</span>
-      <h3>Meta revela acelerador de hardware proprietário baseado em 3D DRAM para IA generativa</h3>
-      <p>A Meta apresentou detalhes de seu acelerador customizado para workloads de IA generativa, utilizando memória 3D DRAM empilhada para atingir maior largura de banda e eficiência energética. O movimento reforça a estratégia da empresa de reduzir dependência de chips de terceiros e controlar verticalmente sua infraestrutura de treinamento e inferência de LLMs.</p>
-      <span class="impact high"><i></i> impacto alto</span>
-    </a>
-
-    <a class="card-destaque" href="https://blog.cloudflare.com/_emdash/api/media/file/01M1185AQ3B90700DKB48C2HHM.png" target="_blank" rel="noopener">
-      <span class="fonte-tag">TLDR Tech</span>
-      <h3>Cloudflare expande defesas contra agentes de IA maliciosos na borda da rede</h3>
-      <p>A Cloudflare anunciou novas capacidades para detectar e bloquear agentes de IA que realizam scraping agressivo, ataques automatizados e comportamentos abusivos em sites e APIs protegidos pela plataforma. A solução utiliza análise comportamental em tempo real na borda, sem adicionar latência perceptível para usuários legítimos, respondendo ao crescimento de bots alimentados por LLMs.</p>
+    <a class="card-destaque" href="https://www.testingcatalog.com/first-outputs-from-gpt-6-astra-model-from-openai/" target="_blank" rel="noopener">
+      <span class="fonte-tag">Hacker News · Testing Catalog</span>
+      <h3>Primeiros outputs do GPT-6 "Astra" da OpenAI vazam na web</h3>
+      <p>Registros iniciais com saídas do modelo GPT-6, codinome "Astra", começaram a circular online. Os exemplos sugerem capacidades significativamente superiores às versões anteriores em raciocínio e geração de código. Embora não oficialmente confirmado pela OpenAI, o material alimenta expectativas sobre o próximo grande salto da empresa em modelos de linguagem de grande escala.</p>
       <span class="impact high"><i></i> impacto alto</span>
     </a>
 
     <a class="card-destaque" href="https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/" target="_blank" rel="noopener">
-      <span class="fonte-tag">TLDR Tech</span>
-      <h3>Pesquisa alerta: máquinas virtuais não são suficientes para conter agentes de IA com capacidades cibernéticas</h3>
-      <p>Estudo da Trail of Bits demonstra que agentes de IA com habilidades de exploração cibernética podem escapar de ambientes de sandbox baseados em VMs, questionando práticas correntes de isolamento. A pesquisa tem implicações diretas para equipes de segurança que usam VMs para testar ou executar agentes autônomos de IA em ambientes corporativos e de pesquisa.</p>
+      <span class="fonte-tag">TLDR · Trail of Bits</span>
+      <h3>VMs não são suficientes para conter agentes de IA com capacidades cibernéticas</h3>
+      <p>Pesquisadores da Trail of Bits publicaram análise mostrando que máquinas virtuais tradicionais não oferecem isolamento adequado para agentes de IA com capacidades ofensivas. O estudo tem implicações diretas para equipes de segurança que testam ou implantam agentes autônomos em ambientes corporativos, e reforça a urgência de novas abordagens de sandboxing para IA.</p>
       <span class="impact high"><i></i> impacto alto</span>
     </a>
 
-    <a class="card-destaque" href="https://metr.org/assets/images/openai-hugging-face-incident-investigation/title-logo-og.png" target="_blank" rel="noopener">
-      <span class="fonte-tag">TLDR Tech</span>
-      <h3>METR investiga incidente envolvendo OpenAI e Hugging Face relacionado a avaliações de segurança</h3>
-      <p>A organização de pesquisa METR (Model Evaluation & Threat Research) publicou investigação sobre um incidente entre OpenAI e Hugging Face envolvendo processos de avaliação de risco de modelos. O caso levanta debates sobre transparência, governança e os critérios usados para liberar ou restringir modelos de IA de alto desempenho ao público.</p>
-      <span class="impact high"><i></i> impacto alto</span>
+    <a class="card-destaque" href="https://calv.info/api/og?title=Small%20Models%20Have%20Arrived" target="_blank" rel="noopener">
+      <span class="fonte-tag">TLDR</span>
+      <h3>Modelos pequenos de IA chegaram para ficar — e isso muda tudo</h3>
+      <p>Uma análise aprofundada argumenta que modelos de linguagem compactos já atingiram qualidade suficiente para substituir LLMs gigantes em grande parte dos casos de uso empresariais, com vantagens claras em custo, latência e privacidade. A tendência aponta para uma descentralização do poder dos grandes labs e maior adoção de modelos on-premise e open-weight por empresas de médio porte.</p>
+      <span class="impact medium"><i></i> impacto médio</span>
     </a>
 
-    <a class="card-destaque" href="https://blog.neurometric.ai/p/introducing-a-task-specific-tool" target="_blank" rel="noopener">
-      <span class="fonte-tag">Hacker News</span>
-      <h3>Show HN: SLM otimizado para tool calling — modelos menores que executam ferramentas com mais precisão</h3>
-      <p>Desenvolvedor apresentou na comunidade do Hacker News um Small Language Model (SLM) projetado especificamente para chamadas de ferramentas (tool calling) em pipelines de agentes de IA. O modelo prioriza precisão na seleção e execução de funções externas com menor custo computacional, endereçando uma das maiores limitações dos modelos gerais em fluxos de automação agentica.</p>
+    <a class="card-destaque" href="https://www.servethehome.com/wp-content/uploads/2026/08/meta-3d-dram-based-accelerator-for-genai-slide-17.jpg" target="_blank" rel="noopener">
+      <span class="fonte-tag">TLDR · ServeTheHome</span>
+      <h3>Meta revela acelerador baseado em DRAM 3D para IA generativa</h3>
+      <p>A Meta apresentou detalhes de um acelerador de hardware proprietário baseado em memória DRAM 3D, projetado especificamente para cargas de trabalho de IA generativa em escala de datacenter. O movimento sinaliza que as grandes plataformas de tecnologia estão cada vez mais construindo seu próprio silício para reduzir dependência de fornecedores como NVIDIA e controlar custos de inferência.</p>
       <span class="impact medium"><i></i> impacto médio</span>
     </a>
 
@@ -158,38 +147,38 @@ footer{border-top:1px solid var(--border);padding-top:17px;margin-top:12px;displ
   </div>
   <div class="noticias-grid">
 
-    <a class="card-noticia" data-source="TLDR" href="https://calv.info/api/og?title=Small%20Models%20Have%20Arrived" target="_blank" rel="noopener">
+    <a class="card-noticia" data-source="TLDR" href="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Omni_1-1_Flash_hero.width-1300.png" target="_blank" rel="noopener">
       <div class="fonte-dot"></div>
       <div class="noticia-content">
-        <h4>Small Models Have Arrived: a era dos modelos de linguagem compactos e especializados</h4>
-        <p>Análise aprofundada argumenta que SLMs (Small Language Models) chegaram a um nível de maturidade que os torna viáveis para produção em empresas, com vantagens claras de custo, latência e privacidade frente a modelos gigantes hospedados em nuvem.</p>
+        <h4>Google lança Gemini Flash Omni 1.1 com melhorias multimodais</h4>
+        <p>O Google apresentou nova versão do Gemini Flash com capacidades multimodais aprimoradas, reforçando o portfólio de modelos eficientes da empresa para uso em produção.</p>
         <span class="fonte-mini">TLDR</span>
       </div>
     </a>
 
-    <a class="card-noticia" data-source="TLDR" href="https://techcrunch.com/wp-content/uploads/2025/09/echo-family-1.png?resize=1200,675" target="_blank" rel="noopener">
+    <a class="card-noticia" data-source="TLDR" href="https://blog.cloudflare.com/_emdash/api/media/file/01M1185AQ3B90700DKB48C2HHM.png" target="_blank" rel="noopener">
       <div class="fonte-dot"></div>
       <div class="noticia-content">
-        <h4>Amazon anuncia nova família Echo com capacidades de IA expandidas</h4>
-        <p>A Amazon revelou atualizações na linha Echo integrando modelos de IA mais avançados ao Alexa, incluindo melhorias em compreensão de linguagem natural e execução de tarefas multi-step sem necessidade de conexão constante com a nuvem.</p>
+        <h4>Cloudflare apresenta novidades em infraestrutura para IA e edge computing</h4>
+        <p>A Cloudflare continua expandindo sua plataforma de edge com suporte ampliado a workloads de IA, incluindo inferência distribuída e novas capacidades de Workers AI.</p>
         <span class="fonte-mini">TLDR</span>
       </div>
     </a>
 
-    <a class="card-noticia" data-source="TLDR" href="https://techcrunch.com/wp-content/uploads/2026/08/jense-nvidi-chip-GettyImages-2266485392.jpg?resize=1200,800" target="_blank" rel="noopener">
+    <a class="card-noticia" data-source="TLDR" href="https://metr.org/assets/images/openai-hugging-face-incident-investigation/title-logo-og.png" target="_blank" rel="noopener">
       <div class="fonte-dot"></div>
       <div class="noticia-content">
-        <h4>NVIDIA: Jensen Huang discute próxima geração de chips e estratégia de IA soberana</h4>
-        <p>Declarações recentes do CEO da NVIDIA reforçam a aposta da empresa em infraestrutura de IA soberana para governos e grandes corporações, com novos chips prometendo saltos de desempenho para cargas de inferência de modelos de linguagem de grande escala.</p>
+        <h4>METR investiga incidente envolvendo OpenAI e Hugging Face</h4>
+        <p>A organização de segurança de IA METR divulgou investigação sobre incidente entre OpenAI e Hugging Face, reforçando a importância de governança e testes de segurança em modelos open-weight.</p>
         <span class="fonte-mini">TLDR</span>
       </div>
     </a>
 
-    <a class="card-noticia" data-source="TLDR" href="https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2026/08/26/AWS_Ducklabs_white_logo_AmazonNews_cdlt_2026_Aug25-1-1-1120x630.png" target="_blank" rel="noopener">
+    <a class="card-noticia" data-source="TLDR" href="https://cdn.wccftech.com/wp-content/uploads/2026/04/NVIDIA-Groq-3-LPX-LPU-1-1920x1079.jpeg" target="_blank" rel="noopener">
       <div class="fonte-dot"></div>
       <div class="noticia-content">
-        <h4>AWS adquire Ducklabs para reforçar capacidades de análise de dados com IA</h4>
-        <p>A Amazon Web Services anunciou a aquisição da Ducklabs, startup especializada em pipelines de dados para workloads de machine learning, reforçando o portfólio do AWS para clientes enterprise que precisam preparar e governar grandes volumes de dados para treinamento e fine-tuning de modelos.</p>
+        <h4>NVIDIA e Groq disputam liderança em chips de inferência para LLMs</h4>
+        <p>A corrida por hardware especializado em inferência de LLMs esquenta com novos detalhes sobre os chips LPU da Groq e a resposta da NVIDIA, impactando escolhas de infraestrutura de IA nas empresas.</p>
         <span class="fonte-mini">TLDR</span>
       </div>
     </a>
@@ -197,8 +186,8 @@ footer{border-top:1px solid var(--border);padding-top:17px;margin-top:12px;displ
     <a class="card-noticia" data-source="TLDR" href="https://www.sentinelone.com/wp-content/uploads/2026/08/Blog_Tenable_Research_CVE.jpg" target="_blank" rel="noopener">
       <div class="fonte-dot"></div>
       <div class="noticia-content">
-        <h4>SentinelOne e Tenable revelam CVEs críticos em infraestrutura corporativa</h4>
-        <p>Pesquisadores da SentinelOne e Tenable publicaram análise detalhada de vulnerabilidades críticas descobertas em sistemas amplamente usados em ambientes corporativos, com recomendações de mitigação imediata para equipes de segurança.</p>
+        <h4>SentinelOne e Tenable Research divulgam novas CVEs críticas</h4>
+        <p>Pesquisadores de segurança publicaram detalhes sobre vulnerabilidades críticas recentemente identificadas, destacando a necessidade de patches urgentes em ambientes corporativos.</p>
         <span class="fonte-mini">TLDR</span>
       </div>
     </a>
@@ -206,8 +195,17 @@ footer{border-top:1px solid var(--border);padding-top:17px;margin-top:12px;displ
     <a class="card-noticia" data-source="TLDR" href="https://www.bleepstatic.com/content/hl-images/2026/07/08/Ubiquiti-headpic.jpg" target="_blank" rel="noopener">
       <div class="fonte-dot"></div>
       <div class="noticia-content">
-        <h4>Falha de segurança grave encontrada em equipamentos Ubiquiti amplamente usados em redes corporativas</h4>
-        <p>Pesquisadores identificaram vulnerabilidade crítica em dispositivos de rede da Ubiquiti que permite acesso não autorizado a ambientes protegidos. A falha afeta versões de firmware populares e exige atualização imediata por administradores de redes.</p>
+        <h4>Ubiquiti enfrenta nova vulnerabilidade de segurança em dispositivos de rede</h4>
+        <p>Falha de segurança identificada em equipamentos Ubiquiti pode afetar redes corporativas e domésticas, exigindo atualização imediata de firmware pelos administradores.</p>
+        <span class="fonte-mini">TLDR</span>
+      </div>
+    </a>
+
+    <a class="card-noticia" data-source="TLDR" href="https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2026/08/26/AWS_Ducklabs_white_logo_AmazonNews_cdlt_2026_Aug25-1-1-1120x630.png" target="_blank" rel="noopener">
+      <div class="fonte-dot"></div>
+      <div class="noticia-content">
+        <h4>AWS adquire DuckLabs para reforçar portfólio de ferramentas de dados na nuvem</h4>
+        <p>A Amazon Web Services anunciou a aquisição da DuckLabs, empresa especializada em ferramentas analíticas de dados, ampliando suas capacidades de processamento e analytics no ecossistema AWS.</p>
         <span class="fonte-mini">TLDR</span>
       </div>
     </a>
@@ -215,53 +213,17 @@ footer{border-top:1px solid var(--border);padding-top:17px;margin-top:12px;displ
     <a class="card-noticia" data-source="TLDR" href="https://una-auxme.github.io/assets/projects/ism2026_ros2smolvla/workbench_overview_cropped.jpg" target="_blank" rel="noopener">
       <div class="fonte-dot"></div>
       <div class="noticia-content">
-        <h4>ROS 2 + SmolVLA: robótica open source ganha modelo de linguagem-visão compacto para controle de robôs</h4>
-        <p>Pesquisadores apresentam SmolVLA integrado ao ROS 2, permitindo que robôs executem comandos em linguagem natural com menor custo computacional. A iniciativa open source democratiza o acesso a robótica controlada por IA para laboratórios e startups com recursos limitados.</p>
+        <h4>Pesquisadores integram modelos de linguagem pequenos a robôs via ROS 2</h4>
+        <p>Nova pesquisa demonstra integração de SmolVLA — modelo de linguagem e visão compacto — com o framework ROS 2 para robótica, abrindo caminho para robôs autônomos mais acessíveis e eficientes.</p>
         <span class="fonte-mini">TLDR</span>
       </div>
     </a>
 
-    <a class="card-noticia" data-source="TLDR" href="https://techcrunch.com/wp-content/uploads/2026/08/boston-scientific-524267992.jpg?resize=1200,772" target="_blank" rel="noopener">
+    <a class="card-noticia" data-source="Hacker News" href="https://finance.biggo.com/news/d1bdbb1d-0309-4fa3-b7c1-e43513240236" target="_blank" rel="noopener">
       <div class="fonte-dot"></div>
       <div class="noticia-content">
-        <h4>Boston Scientific integra IA em dispositivos médicos para diagnóstico em tempo real</h4>
-        <p>A Boston Scientific anunciou parceria com fornecedores de IA para incorporar modelos de análise preditiva em dispositivos médicos implantáveis, permitindo monitoramento contínuo e alertas precoces de condições cardíacas diretamente no hardware.</p>
-        <span class="fonte-mini">TLDR</span>
-      </div>
-    </a>
-
-    <a class="card-noticia" data-source="TLDR" href="https://images.siliconangle.com/blogs.dir/1/files/2026/08/Thomson-Reuters-building.jpg" target="_blank" rel="noopener">
-      <div class="fonte-dot"></div>
-      <div class="noticia-content">
-        <h4>Thomson Reuters aposta em IA para transformar plataformas jurídicas e de compliance</h4>
-        <p>A Thomson Reuters detalhou sua estratégia de IA para o setor jurídico, com integração de LLMs em ferramentas de pesquisa legal, análise de contratos e compliance regulatório, prometendo redução significativa de tempo em tarefas que antes exigiam horas de trabalho manual de advogados.</p>
-        <span class="fonte-mini">TLDR</span>
-      </div>
-    </a>
-
-    <a class="card-noticia" data-source="Hacker News" href="https://github.com/iwasoftcom/ai-docs-standard" target="_blank" rel="noopener">
-      <div class="fonte-dot"></div>
-      <div class="noticia-content">
-        <h4>Documentation.ai.md: novo padrão de documentação projetado para agentes de IA, não para humanos</h4>
-        <p>Proposta open source no GitHub define um formato de documentação estruturado especificamente para ser consumido por agentes de IA, facilitando que LLMs entendam e naveguem repositórios de código e sistemas complexos de forma autônoma.</p>
-        <span class="fonte-mini">Hacker News</span>
-      </div>
-    </a>
-
-    <a class="card-noticia" data-source="Hacker News" href="https://twitter.com/colinhacks/status/2093725420462182512" target="_blank" rel="noopener">
-      <div class="fonte-dot"></div>
-      <div class="noticia-content">
-        <h4>Zod v4.5 adiciona compilação de schemas com validação 3 a 9x mais rápida</h4>
-        <p>A biblioteca de validação de dados Zod, muito usada em projetos TypeScript e Node.js, lançou a versão 4.5 com compilação nativa de schemas, resultando em ganhos de performance de 3 a 9x em benchmarks de validação — impacto direto em APIs e backends de alta frequência.</p>
-        <span class="fonte-mini">Hacker News</span>
-      </div>
-    </a>
-
-    <a class="card-noticia" data-source="Hacker News" href="https://aiku.io/blog/defusing-an-18-gb-bomb-inside-redis" target="_blank" rel="noopener">
-      <div class="fonte-dot"></div>
-      <div class="noticia-content">
-        <h4>Como desativar uma "bomba" de 18 GB dentro do Redis: análise de caso de engenharia</h4>
-        <p>Post técnico detalhado explora como um banco de dados Redis acumulou 18 GB de dados corrompidos ou desnecessários em produção e como a equipe identificou, isolou e resolveu o problema sem downtime, oferecendo lições valiosas para equipes que operam caches de alta escala.</p>
+        <h4>Nova rede social "Twitter.now" é lançada e enfrenta batalha de marca registrada</h4>
+        <p>Uma nova plataforma social adotou o nome "Twitter" e já está em disputa legal de marca registrada, num cenário que revela os riscos do vácuo deixado pela rebranding do X.</p>
         <span class="fonte-mini">Hacker News</span>
       </div>
     </a>
@@ -270,7 +232,7 @@ footer{border-top:1px solid var(--border);padding-top:17px;margin-top:12px;displ
 </section>
 <section class="insight">
   <h2>Leitura rápida para quem trabalha com tecnologia</h2>
-  <p>O dia deixa um recado claro para CTOs, arquitetos e times de engenharia: a eficiência virou o novo campo de batalha da IA. Enquanto o Google entrega o Gemini Flash 2.0 Omni e pesquisadores celebram a chegada dos SLMs, a Meta constrói seu próprio silicon para controlar custos de inferência em escala. Paralelamente, a segurança de agentes de IA deixou de ser teórica — a pesquisa da Trail of Bits sobre fuga de VMs e as novas defesas da Cloudflare contra bots baseados em LLMs mostram que a superfície de ataque cresceu junto com a adoção. Equipes de segurança precisam revisar urgentemente suas políticas de sandbox para agentes autônomos. Por fim, a padronização de documentação para IA (Documentation.ai.md) sinaliza que a próxima fronteira da engenharia de software é tornar sistemas legíveis não só para humanos, mas para os próprios agentes que os operam.</p>
+  <p>O dia de hoje deixa um recado claro para líderes de TI e engenharia: as decisões de parceria com grandes fornecedores de IA — como OpenAI — precisam ser tratadas com a mesma diligência de contratos críticos de infraestrutura. O caso Cursor/SpaceX mostra que mudanças de controle acionário podem resultar em perda abrupta de acesso a ferramentas essenciais. Ao mesmo tempo, o avanço dos modelos pequenos e o investimento em silício próprio por Meta e outros gigantes sinalizam que a janela para diversificação de provedores de IA está se abrindo — e equipes que já testam alternativas open-weight estarão melhor posicionadas. Em segurança, a conclusão de que VMs não bastam para isolar agentes autônomos deve acelerar a revisão de políticas de sandboxing em organizações que já operam com IA agentica em ambientes sensíveis.</p>
 </section>
 <footer>
   <div class="footer-timestamp">Gerado automaticamente em 29 de agosto de 2026</div>
