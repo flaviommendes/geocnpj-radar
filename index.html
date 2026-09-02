@@ -57,7 +57,7 @@ section{margin-bottom:40px}
 .card-noticia .fonte-mini{font-family:'DM Mono',monospace;font-size:.58rem;color:var(--green);text-transform:uppercase;letter-spacing:.08em;margin-top:5px;display:block}
 .insight{border-top:1px solid var(--border);padding-top:20px}
 .insight h2{font-size:1rem;margin-bottom:7px}
-.insight p{color:var(--muted);font-size:.84rem;max-width:820px}
+.insight p{font-size:.84rem;color:var(--muted);max-width:820px}
 footer{border-top:1px solid var(--border);padding-top:17px;margin-top:12px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:flex-start}
 .footer-timestamp,.footer-sources{font-family:'DM Mono',monospace;font-size:.62rem;color:var(--muted-2)}
 .footer-sources{text-align:right}
@@ -71,23 +71,23 @@ footer{border-top:1px solid var(--border);padding-top:17px;margin-top:12px;displ
 <div class="container">
 <header>
   <div class="topline">
-    <div class="brand">RADAR TI & IA</div>
+    <div class="brand">RADAR TI &amp; IA</div>
     <div class="live"><span class="live-dot"></span> edição diária</div>
   </div>
   <div class="header-date" id="dataHeader"></div>
-  <h1 class="header-title">O que realmente importa em <span class="accent">TI & IA</span>.</h1>
-  <p class="header-summary">Agentes de IA avançam com protocolos abertos, ferramentas para migração de código ganham tração, e robótica segue em debate sobre viabilidade real.</p>
+  <h1 class="header-title">O que realmente importa em <span class="accent">TI &amp; IA</span>.</h1>
+  <p class="header-summary">Técnicas de raciocínio da OpenAI preocupam especialistas em segurança enquanto governo dos EUA apoia uso de conteúdo protegido para treinar LLMs; startups de IA atingem valuations bilionárias em tempo recorde.</p>
 </header>
 <div class="snapshot">
-  <div class="metric"><div class="metric-label">Notícias</div><div class="metric-value">18</div></div>
-  <div class="metric"><div class="metric-label">Destaques</div><div class="metric-value green">5</div></div>
-  <div class="metric"><div class="metric-label">Sinal do dia</div><div class="metric-value orange">Agentes</div></div>
+  <div class="metric"><div class="metric-label">Notícias</div><div class="metric-value">23</div></div>
+  <div class="metric"><div class="metric-label">Destaques</div><div class="metric-value green">8</div></div>
+  <div class="metric"><div class="metric-label">Sinal do dia</div><div class="metric-value orange">Velocidade vs. Segurança</div></div>
   <div class="metric"><div class="metric-label">Foco</div><div class="metric-value blue">TI + IA</div></div>
 </div>
 <div class="trend">
   <div class="trend-kicker">Tendência do dia</div>
-  <h2>Infraestrutura para agentes de IA descentralizados ganha força</h2>
-  <p>Protocolos abertos para descoberta, negociação e pagamento entre agentes de IA, ferramentas de migração e modernização de código com IA, e OAuth 2.1 para servidores MCP pessoais marcam o dia. A infraestrutura para agentic AI está se consolidando rapidamente.</p>
+  <h2>Corrida por IA mais rápida e segura</h2>
+  <p>NVIDIA avança em decodificação especulativa para acelerar inferência de LLMs, enquanto crescem preocupações sobre segurança com novas técnicas de raciocínio da OpenAI e o modelo Astra capaz de invadir sistemas. HiddenLayer levanta US$ 100M para proteger deployments corporativos de IA.</p>
 </div>
 <section>
   <div class="section-head">
@@ -95,38 +95,52 @@ footer{border-top:1px solid var(--border);padding-top:17px;margin-top:12px;displ
     <span class="section-note">Alta relevância para TI e negócios</span>
   </div>
   <div class="destaques-grid">
-    <a class="card-destaque" href="https://github.com/bizswarm44-coder/aether-protocol" target="_blank" rel="noopener">
-  <span class="fonte-tag">Hacker News</span>
-  <h3>Protocolo aberto para agentes de IA se descobrirem, negociarem e pagarem entre si</h3>
-  <p>O Aether Protocol é uma proposta de infraestrutura aberta para permitir que agentes de IA autônomos se encontrem, negociem serviços e processem pagamentos de forma descentralizada, sem intermediários centralizados.</p>
+    <a class="card-destaque" href="https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/" target="_blank" rel="noopener">
+  <span class="fonte-tag">TechCrunch</span>
+  <h3>Nova técnica de raciocínio da OpenAI alarma especialistas em segurança de IA</h3>
+  <p>Especialistas em segurança de IA expressam preocupação com as novas capacidades de raciocínio da OpenAI, levantando questões sobre controle e alinhamento de modelos avançados. A técnica representa avanço significativo mas traz riscos ainda não totalmente compreendidos.</p>
   <span class="impact high"><i></i> impacto alto</span>
 </a>
-
-<a class="card-destaque" href="https://secondthoughts.ai/p/14-reasons-robotics-is-hard" target="_blank" rel="noopener">
-  <span class="fonte-tag">Hacker News</span>
-  <h3>Ignore os vídeos de demonstração de robótica — 14 razões pelas quais robótica é difícil</h3>
-  <p>Análise crítica sobre como demos de robótica geralmente mascaram as enormes dificuldades de implementação real. O autor lista 14 desafios técnicos fundamentais que impedem a adoção em larga escala, desde ambientes controlados até generalização.</p>
-  <span class="impact medium"><i></i> impacto médio</span>
+<a class="card-destaque" href="https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/" target="_blank" rel="noopener">
+  <span class="fonte-tag">TechCrunch</span>
+  <h3>Governo dos EUA apoia OpenAI sobre uso de material protegido para treinar LLMs</h3>
+  <p>Em decisão controversa, governo americano se posiciona a favor da OpenAI na questão do uso de conteúdo protegido por direitos autorais para treinamento de modelos de linguagem, impactando todo o setor de IA.</p>
+  <span class="impact high"><i></i> impacto alto</span>
 </a>
-
-<a class="card-destaque" href="https://www.kdab.com/using-ai-to-modernize-or-migrate-code/" target="_blank" rel="noopener">
-  <span class="fonte-tag">Hacker News</span>
-  <h3>Usando IA para modernizar ou migrar código</h3>
-  <p>Artigo técnico explora como LLMs podem ser aplicados para migração de código legado e modernização de bases de código antigas, apresentando casos de uso práticos e limitações da abordagem em ambientes corporativos.</p>
-  <span class="impact medium"><i></i> impacto médio</span>
+<a class="card-destaque" href="https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/" target="_blank" rel="noopener">
+  <span class="fonte-tag">TechCrunch</span>
+  <h3>HiddenLayer capta US$ 100M com corrida de empresas para proteger deployments de IA</h3>
+  <p>Startup de segurança HiddenLayer levanta US$ 100 milhões em rodada que reflete urgência corporativa em proteger implementações de IA contra ameaças emergentes e vulnerabilidades em modelos de machine learning.</p>
+  <span class="impact high"><i></i> impacto alto</span>
 </a>
-
-<a class="card-destaque" href="https://aliasunder.dev/posts/oauth-2-1-for-a-personal-mcp-server/" target="_blank" rel="noopener">
-  <span class="fonte-tag">Hacker News</span>
-  <h3>OAuth 2.1 para servidor MCP pessoal: o que três meses em produção mudaram</h3>
-  <p>Relato de experiência real implementando OAuth 2.1 em um servidor MCP (Model Context Protocol) pessoal após três meses de uso em produção, com aprendizados práticos sobre autenticação e autorização para agentes de IA.</p>
-  <span class="impact medium"><i></i> impacto médio</span>
+<a class="card-destaque" href="https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/" target="_blank" rel="noopener">
+  <span class="fonte-tag">TechCrunch</span>
+  <h3>AfterQuery se torna unicórnio mais rápido da Y Combinator, avaliado em US$ 3,2B</h3>
+  <p>AfterQuery estabelece recorde como startup que atingiu status de unicórnio mais rapidamente na história da Y Combinator, com valuation de US$ 3,2 bilhões, sinalizando apetite intenso por ferramentas de IA empresarial.</p>
+  <span class="impact high"><i></i> impacto alto</span>
 </a>
-
-<a class="card-destaque" href="https://machblink.com/chronicle" target="_blank" rel="noopener">
-  <span class="fonte-tag">Hacker News</span>
-  <h3>Chronicle usou ~210M tokens da minha cota do ChatGPT em 70 dias antes de eu descobrir</h3>
-  <p>Alerta sobre consumo inesperado de cotas de API: usuário relata que o app Chronicle consumiu 210 milhões de tokens sem seu conhecimento, destacando riscos de custo e controle em integrações de IA de terceiros.</p>
+<a class="card-destaque" href="https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months/" target="_blank" rel="noopener">
+  <span class="fonte-tag">TechCrunch</span>
+  <h3>Wonderful mais que dobra valuation para US$ 5B em menos de 6 meses</h3>
+  <p>Startup Wonderful atinge valuation de US$ 5 bilhões, mais que dobrando sua avaliação em menos de seis meses, demonstrando crescimento explosivo no mercado de soluções baseadas em IA.</p>
+  <span class="impact high"><i></i> impacto alto</span>
+</a>
+<a class="card-destaque" href="https://developer.nvidia.com/blog/co-designing-ai-models-using-speculative-decoding-for-faster-llm-inference/" target="_blank" rel="noopener">
+  <span class="fonte-tag">NVIDIA</span>
+  <h3>NVIDIA apresenta co-design de modelos de IA com decodificação especulativa para inferência mais rápida</h3>
+  <p>NVIDIA detalha técnica de decodificação especulativa para acelerar inferência de LLMs, permitindo que modelos trabalhem em conjunto para reduzir latência e melhorar performance em produção.</p>
+  <span class="impact high"><i></i> impacto alto</span>
+</a>
+<a class="card-destaque" href="https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/" target="_blank" rel="noopener">
+  <span class="fonte-tag">TechCrunch</span>
+  <h3>Modelo Astra da OpenAI é muito eficaz em invadir sistemas de computador</h3>
+  <p>Novo modelo Astra da OpenAI demonstra capacidades preocupantes de exploração de sistemas, levantando alertas sobre segurança cibernética e uso malicioso de IA avançada para hacking.</p>
+  <span class="impact high"><i></i> impacto alto</span>
+</a>
+<a class="card-destaque" href="https://techcrunch.com/2026/09/02/openai-faces-30-more-lawsuits-tied-to-tumbler-ridge-shooting/" target="_blank" rel="noopener">
+  <span class="fonte-tag">TechCrunch</span>
+  <h3>OpenAI enfrenta mais 30 processos relacionados ao tiroteio de Tumbler Ridge</h3>
+  <p>OpenAI é alvo de 30 novos processos judiciais vinculados ao tiroteio de Tumbler Ridge, ampliando questões sobre responsabilidade legal de empresas de IA por uso de suas tecnologias.</p>
   <span class="impact medium"><i></i> impacto médio</span>
 </a>
   </div>
@@ -144,100 +158,140 @@ footer{border-top:1px solid var(--border);padding-top:17px;margin-top:12px;displ
     <button class="filter" data-filter="TLDR">TLDR</button>
   </div>
   <div class="noticias-grid">
-    <a class="card-noticia" data-source="Hacker News" href="https://kafma.app/" target="_blank" rel="noopener">
+    <a class="card-noticia" data-source="Hacker News" href="https://www.nyc.gov/mayors-office/news/2026/09/mayor-mamdani-and-chancellor-samuels-put-students-first-with-nat" target="_blank" rel="noopener">
   <div class="fonte-dot"></div>
   <div class="noticia-content">
-    <h4>Kafma – cliente GUI desktop para Kafka para debugging</h4>
-    <p>Nova ferramenta de interface gráfica para Apache Kafka focada em debugging e troubleshooting de mensagens e tópicos.</p>
-    <span class="fonte-mini">Hacker News</span>
+    <h4>NYC anuncia moratória nacional mais ampla de IA generativa em escolas</h4>
+    <p>Nova York anuncia a mais ampla moratória nacional sobre uso de IA generativa em escolas, priorizando proteção de estudantes e debate sobre impactos educacionais.</p>
+    <span class="fonte-mini">NYC Mayor's Office</span>
   </div>
 </a>
-
-<a class="card-noticia" data-source="Hacker News" href="https://skywarden.app/en" target="_blank" rel="noopener">
+<a class="card-noticia" data-source="TechCrunch" href="https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/" target="_blank" rel="noopener">
   <div class="fonte-dot"></div>
   <div class="noticia-content">
-    <h4>Skywarden – Companheiro inteligente de planejamento de astrofotografia</h4>
-    <p>App para auxiliar astrofotógrafos no planejamento de sessões, com análise de condições climáticas e posicionamento astronômico.</p>
-    <span class="fonte-mini">Hacker News</span>
+    <h4>Pentágono agora tem sua própria versão de ChatGPT e Grok</h4>
+    <p>Departamento de Defesa dos EUA lança versão proprietária de assistente de IA similar ao ChatGPT para uso militar e de inteligência.</p>
+    <span class="fonte-mini">TechCrunch</span>
   </div>
 </a>
-
-<a class="card-noticia" data-source="Hacker News" href="https://blastradius.dpdns.org/" target="_blank" rel="noopener">
+<a class="card-noticia" data-source="TechCrunch" href="https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/" target="_blank" rel="noopener">
   <div class="fonte-dot"></div>
   <div class="noticia-content">
-    <h4>Blast Radius – toda correção tem um raio de explosão</h4>
-    <p>Projeto que visualiza e mapeia o impacto de mudanças em sistemas complexos, ajudando a prever efeitos colaterais de fixes.</p>
-    <span class="fonte-mini">Hacker News</span>
+    <h4>Novo lançamento Fable da Anthropic é mais barato e menos restritivo</h4>
+    <p>Anthropic lança versão Fable de seus modelos com preços reduzidos e menos restrições, democratizando acesso a IA avançada.</p>
+    <span class="fonte-mini">TechCrunch</span>
   </div>
 </a>
-
-<a class="card-noticia" data-source="Hacker News" href="https://www.searchplex.net/blog/llm-judge-search-relevance" target="_blank" rel="noopener">
+<a class="card-noticia" data-source="TechCrunch" href="https://techcrunch.com/2026/09/01/chatgpt-health-adds-epic-integration-for-clinicians-to-import-patient-data/" target="_blank" rel="noopener">
   <div class="fonte-dot"></div>
   <div class="noticia-content">
-    <h4>O que seu LLM Judge está medindo?</h4>
-    <p>Análise sobre as métricas reais capturadas por modelos de linguagem usados como juízes em avaliações de relevância de busca.</p>
-    <span class="fonte-mini">Hacker News</span>
+    <h4>ChatGPT Health adiciona integração com Epic para clínicos importarem dados de pacientes</h4>
+    <p>OpenAI integra ChatGPT Health com sistema Epic, permitindo que médicos importem dados de pacientes diretamente para consultas assistidas por IA.</p>
+    <span class="fonte-mini">TechCrunch</span>
   </div>
 </a>
-
-<a class="card-noticia" data-source="Hacker News" href="https://github.com/authorizerdev/authorizer" target="_blank" rel="noopener">
+<a class="card-noticia" data-source="TechCrunch" href="https://techcrunch.com/2026/09/02/indias-richest-man-now-wants-to-turn-aging-computers-into-ai-ready-pcs/" target="_blank" rel="noopener">
   <div class="fonte-dot"></div>
   <div class="noticia-content">
-    <h4>Authorizer – autenticação open-source para apps enterprise e agentes</h4>
-    <p>Solução de autenticação e autorização de código aberto voltada para aplicações corporativas e sistemas de agentes de IA.</p>
-    <span class="fonte-mini">Hacker News</span>
+    <h4>Homem mais rico da Índia quer transformar computadores antigos em PCs prontos para IA</h4>
+    <p>Mukesh Ambani anuncia iniciativa para modernizar computadores legados e torná-los compatíveis com cargas de trabalho de IA na Índia.</p>
+    <span class="fonte-mini">TechCrunch</span>
   </div>
 </a>
-
-<a class="card-noticia" data-source="Hacker News" href="https://www.sciencenews.org/article/dark-matter-particle-wimp-lz-experiment" target="_blank" rel="noopener">
+<a class="card-noticia" data-source="TechCrunch" href="https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use/" target="_blank" rel="noopener">
   <div class="fonte-dot"></div>
   <div class="noticia-content">
-    <h4>Caçadores de matéria escura podem ter detectado indícios das partículas</h4>
-    <p>Experimento LZ detecta sinais que podem indicar WIMPs, candidatos a partículas de matéria escura, em resultados preliminares.</p>
-    <span class="fonte-mini">Hacker News</span>
+    <h4>AIR levanta US$ 50M para ajudar empresas a avaliar habilidades de agentes de IA</h4>
+    <p>Startup AIR capta US$ 50 milhões para desenvolver plataforma que permite empresas auditarem e validarem capacidades de agentes de IA.</p>
+    <span class="fonte-mini">TechCrunch</span>
   </div>
 </a>
-
-<a class="card-noticia" data-source="Hacker News" href="https://store.steampowered.com/app/4080030/The_Message_from_Deep_Space/" target="_blank" rel="noopener">
+<a class="card-noticia" data-source="TechCrunch" href="https://techcrunch.com/2026/08/31/three-year-old-ai-media-search-startup-clipto-hits-a-250m-valuation/" target="_blank" rel="noopener">
   <div class="fonte-dot"></div>
   <div class="noticia-content">
-    <h4>The Message from Deep Space – jogo de puzzle espacial</h4>
-    <p>Novo jogo na Steam baseado em decodificação de mensagens alienígenas, usando lógica e criptografia.</p>
-    <span class="fonte-mini">Hacker News</span>
+    <h4>Clipto usa IA para buscar terabytes de vídeo e atinge valuation de US$ 250M</h4>
+    <p>Startup de busca em mídia com IA Clipto, com três anos, alcança avaliação de US$ 250 milhões após demonstrar capacidade de indexar grandes volumes de vídeo.</p>
+    <span class="fonte-mini">TechCrunch</span>
   </div>
 </a>
-
-<a class="card-noticia" data-source="Hacker News" href="https://www.youtube.com/watch?v=LzLqmaHguI0" target="_blank" rel="noopener">
+<a class="card-noticia" data-source="TechCrunch" href="https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/" target="_blank" rel="noopener">
   <div class="fonte-dot"></div>
   <div class="noticia-content">
-    <h4>Hamelabbin Building Homelab [vídeo]</h4>
-    <p>Série em vídeo documentando a construção de um homelab completo para desenvolvimento e testes de infraestrutura.</p>
-    <span class="fonte-mini">Hacker News</span>
+    <h4>Aposta de US$ 3,5B da NVIDIA na MediaTek revela plano contra construção de chips de IA de Big Techs</h4>
+    <p>Investimento bilionário da NVIDIA na MediaTek sinaliza estratégia para competir com desenvolvimento interno de chips de IA por grandes empresas de tecnologia.</p>
+    <span class="fonte-mini">TechCrunch</span>
   </div>
 </a>
-
-<a class="card-noticia" data-source="Hacker News" href="https://www.optilise.com/" target="_blank" rel="noopener">
+<a class="card-noticia" data-source="TechCrunch" href="https://techcrunch.com/2026/09/01/sequoia-incubated-empirik-launches-with-21m-to-predict-outages-before-they-happen/" target="_blank" rel="noopener">
   <div class="fonte-dot"></div>
   <div class="noticia-content">
-    <h4>Optilise é um novo estilo de consultoria BI e desenvolvedor de software</h4>
-    <p>Startup oferece serviços de Business Intelligence e desenvolvimento customizado com abordagem moderna.</p>
-    <span class="fonte-mini">Hacker News</span>
+    <h4>Empirik, incubada pela Sequoia, lança com US$ 21M para prever interrupções antes que aconteçam</h4>
+    <p>Startup Empirik emerge de incubadora da Sequoia com US$ 21 milhões para usar IA na predição de falhas em infraestrutura antes de causarem downtime.</p>
+    <span class="fonte-mini">TechCrunch</span>
+  </div>
+</a>
+<a class="card-noticia" data-source="Hacker News" href="https://www.federalhiringdata.com/articles/sality-fbi-cybercrime-workforce-2026" target="_blank" rel="noopener">
+  <div class="fonte-dot"></div>
+  <div class="noticia-content">
+    <h4>FBI busca 152 posições de cibersegurança após queda de 2.080 funcionários</h4>
+    <p>FBI anuncia recrutamento massivo de especialistas em cibercrime após redução significativa de efetivo, refletindo desafios de retenção em setor de segurança.</p>
+    <span class="fonte-mini">FBI Data</span>
+  </div>
+</a>
+<a class="card-noticia" data-source="Olhar Digital" href="https://olhardigital.com.br/2026/09/02/pro/redata-brasil-vai-cortar-impostos-para-atrair-data-centers/" target="_blank" rel="noopener">
+  <div class="fonte-dot"></div>
+  <div class="noticia-content">
+    <h4>Brasil vai cortar impostos para atrair data centers</h4>
+    <p>Governo brasileiro anuncia redução de impostos para estimular instalação de data centers no país, visando atrair investimentos em infraestrutura de nuvem e IA.</p>
+    <span class="fonte-mini">Olhar Digital</span>
+  </div>
+</a>
+<a class="card-noticia" data-source="Olhar Digital" href="https://olhardigital.com.br/2026/09/02/dicas-e-tutoriais/cole-este-prompt-gratuito-para-tornar-sua-ia-mais-transparente-e-critica/" target="_blank" rel="noopener">
+  <div class="fonte-dot"></div>
+  <div class="noticia-content">
+    <h4>Prompt gratuito torna IA mais transparente e crítica</h4>
+    <p>Novo prompt de sistema promete melhorar transparência e capacidade crítica de assistentes de IA em interações com usuários.</p>
+    <span class="fonte-mini">Olhar Digital</span>
+  </div>
+</a>
+<a class="card-noticia" data-source="Olhar Digital" href="https://olhardigital.com.br/2026/09/02/pro/cade-aprofunda-investigacao-sobre-contratos-da-99food-e-nega-pedido-da-keeta/" target="_blank" rel="noopener">
+  <div class="fonte-dot"></div>
+  <div class="noticia-content">
+    <h4>Cade rejeita pedido da Keeta contra 99Food, mas mantém investigação</h4>
+    <p>Conselho Administrativo de Defesa Econômica rejeita medida cautelar mas continua investigando práticas contratuais no mercado de delivery.</p>
+    <span class="fonte-mini">Olhar Digital</span>
+  </div>
+</a>
+<a class="card-noticia" data-source="Hacker News" href="https://www.anildash.com/2026/09/02/cancer-capital/" target="_blank" rel="noopener">
+  <div class="fonte-dot"></div>
+  <div class="noticia-content">
+    <h4>VC não é mais VC – entendendo a ascensão do Cancer Capital</h4>
+    <p>Análise crítica sobre transformação do capital de risco em modelo mais predatório e menos focado em inovação sustentável.</p>
+    <span class="fonte-mini">Anil Dash</span>
+  </div>
+</a>
+<a class="card-noticia" data-source="Hacker News" href="https://sw-ml-study.github.io/sw-mlpl/" target="_blank" rel="noopener">
+  <div class="fonte-dot"></div>
+  <div class="noticia-content">
+    <h4>Playground open source de linguagens de programação para ML</h4>
+    <p>Nova plataforma interativa permite explorar e comparar diferentes linguagens de programação voltadas para machine learning.</p>
+    <span class="fonte-mini">sw-ml-study</span>
   </div>
 </a>
   </div>
 </section>
 <section class="insight">
   <h2>Leitura rápida para quem trabalha com tecnologia</h2>
-  <p>O dia mostra uma clara evolução da infraestrutura de IA em direção a sistemas multi-agente descentralizados. Protocolos abertos como o Aether estão criando as bases para economias de agentes autônomos, enquanto ferramentas de migração de código com IA ganham tração em empresas. Paralelamente, o ceticismo saudável sobre robótica (apesar dos demos impressionantes) e alertas sobre consumo de APIs lembram que a adoção real de IA exige governança, monitoramento e expectativas realistas. Para líderes de TI: invista em observabilidade de custos de IA e comece a explorar MCP e protocolos de agentes.</p>
+  <p>O dia 2 de setembro de 2026 marca tensões crescentes no ecossistema de IA: enquanto a OpenAI enfrenta 30 novos processos relacionados ao tiroteio de Tumbler Ridge e alarmes de segurança com suas técnicas de raciocínio, o governo dos EUA se posiciona a favor do uso de material protegido para treinar LLMs. No front técnico, NVIDIA avança em decodificação especulativa para acelerar inferência, e startups como Wonderful (US$ 5B) e AfterQuery (US$ 3.2B, unicórnio mais rápido da YC) atingem valuations estratosféricas. A dicotomia entre inovação acelerada e governança responsável nunca foi tão evidente: NYC anuncia moratória ampla de IA generativa em escolas, enquanto o Pentágono lança sua própria versão de ChatGPT. Para líderes de TI, o recado é claro: investir em segurança de IA não é mais opcional – HiddenLayer captou US$ 100M exatamente para isso.</p>
 </section>
 <footer>
-  <div class="footer-timestamp">Gerado automaticamente em 2 de setembro de 2026</div>
+  <div class="footer-timestamp">Gerado automaticamente em 2026-09-02</div>
   <div class="footer-sources">
     Fontes:
     <a href="https://news.ycombinator.com/newest" target="_blank">Hacker News</a> ·
     <a href="https://techcrunch.com/category/artificial-intelligence/" target="_blank">TechCrunch AI</a> ·
-    <a href="https://www.inventormiguel.com/" target="_blank">Inventor Miguel</a> ·
-    <a href="https://tldr.tech/" target="_blank">TLDR Tech</a>
+    <a href="https://www.mit.edu/" target="_blank">MIT</a> ·
+    <a href="https://olhardigital.com.br/" target="_blank">Olhar Digital</a>
   </div>
 </footer>
 </div>
